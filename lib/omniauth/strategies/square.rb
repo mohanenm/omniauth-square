@@ -57,7 +57,7 @@ module OmniAuth
       def access_token_request_payload
         params = {
           :code         => request.params['code'],
-          :redirect_uri => callback_url
+#           :redirect_uri => callback_url
         }
 
         params.merge! token_params.to_hash(:symbolize_keys => true)
