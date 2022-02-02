@@ -5,8 +5,8 @@ module OmniAuth
     class Square < OmniAuth::Strategies::OAuth2
 
       option :client_options, {
-        :site          => 'https://squareup.com/',
-        :connect_site  => 'https://connect.squareup.com',
+        :site          => 'https://squareupsandbox.com/',
+        :connect_site  => 'https://connect.squareupsandbox.com',
         :authorize_url => '/oauth2/authorize',
         :token_url     => '/oauth2/token'
       }
