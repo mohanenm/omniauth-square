@@ -14,7 +14,7 @@ describe OmniAuth::Strategies::Square do
 
   describe '#client' do
     it 'has correct Square site' do
-      subject.client.site.should eq('https://squareup.com/')
+      subject.client.site.should eq('https://squareupsandbox.com/')
     end
 
     it 'has correct authorize url' do
@@ -146,7 +146,7 @@ describe OmniAuth::Strategies::Square do
     end
 
     it 'changes the clients site' do
-      expect(@token.client.site).to eq('https://connect.squareup.com')
+      expect(@token.client.site).to eq('https://connect.squareupsandbox.com')
     end
   end
 
